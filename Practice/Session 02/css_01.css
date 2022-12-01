@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.div__parent {
+  display: flex;
+}
+
+.column__left {
+  flex: 0.5;
+  height: 100px;
+  color: blue;
+  background-color: red;
+}
+
+.column__right {
+  flex: 0.5;
+  height: 100px;
+  color: red;
+  background-color: blue;
+}

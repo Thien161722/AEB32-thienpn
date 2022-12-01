@@ -1,0 +1,53 @@
+header {
+  padding: 15px;
+  border: 1px solid black;
+  margin-top: 5px;
+  text-align: center;
+}
+
+nav {
+  padding: 15px;
+  border: 1px solid black;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.div__parent {
+  display: flex;
+}
+
+.column__left {
+  flex: 0.6;
+}
+
+.column__left__top {
+  text-align: center;
+  margin-top: 5px;
+  padding: 100px 0;
+  border: 1px solid black;
+}
+
+.column__left__bottom {
+  text-align: center;
+  margin-top: 5px;
+  padding: 100px 0;
+  border: 1px solid black;
+}
+
+.column__right {
+  flex: 0.4;
+  margin: 5px 0 0 5px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.column__right__content {
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid black;
+  margin-top: 5px;
+}
