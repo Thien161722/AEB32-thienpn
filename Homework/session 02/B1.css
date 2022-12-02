@@ -1,0 +1,14 @@
+.title {
+    color: brown;
+}
+
+.date {
+    font-size: 14px;
+}
+.image {
+    display: flex;
+}
+
+img {
+    margin: auto;
+}
