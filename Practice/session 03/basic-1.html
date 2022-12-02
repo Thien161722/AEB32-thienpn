@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B1__basic1 of practice session 03</title>
+    <style>
+      .parent {
+        border: 1px solid rgb(48, 44, 44);
+        padding: 10px;
+        max-width: 550px;
+        margin: auto;
+        display: flex;
+      }
+
+      .left__column {
+        flex: 0.5;
+        display: flex;
+      }
+
+      img {
+        margin: auto;
+      }
+
+      .right__column {
+        flex: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="left__column">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+      </div>
+      <div class="right__column">
+        <h1>Clothing & Apparel</h1>
+        <p>Accessories</p>
+        <p>Bags</p>
+        <p>Kid's Fashion</p>
+        <p>Mens</p>
+      </div>
+    </div>
+  </body>
+</html>

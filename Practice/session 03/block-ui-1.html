@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            background-color: white;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+        }
+
+        .row {
+            height: 200px;
+            background-color: rgb(209, 216, 216);
+            display: flex;
+        }
+
+        .righttoleft {
+            direction: rtl;
+        }
+
+        
+
+        .bandwidth__left {
+            flex: 0.3;
+            background-color: red;
+            color: white;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .bandwidth__percent {
+            flex: 0.7;
+            display: flex;
+        }
+
+        .bandwidth__percent__show {
+            flex: 0.2;
+            background-color: brown;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .bandwidth__percent__empty {
+            flex: 1-0.2;
+        }
+
+        .storage__left {
+            flex: 0.3;
+            background-color: rgb(43, 132, 157);
+            color: white;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .storage__percent {
+            flex: 0.7;
+            display: flex;
+        }
+
+        .storage__percent__show {
+            flex: 0.5;
+            background-color: rgb(111, 170, 207);
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .storage__percent__empty {
+            flex: 0.5;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="bandwidth__left righttoleft">BANDWIDTH</div>
+            <div class="bandwidth__percent">
+                <div class="bandwidth__percent__show">20%</div>
+                <div class="bandwidth__percent__empty"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="storage__left righttoleft">STORAGE</div>
+            <div class="storage__percent">
+                <div class="storage__percent__show">50%</div>
+                <div class="storage__percent__empty"></div>
+            </div>
+        
+    </div>
+</body>
+</html>
