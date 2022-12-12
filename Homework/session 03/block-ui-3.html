@@ -4,46 +4,205 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>block ui 3 of session 03</title>
+    <title>block ui 3</title>
     <style>
-      body {
-        margin: 0;
-      }
       .container {
         height: 100vh;
-        padding: 80px 80px 100px 50px;
-        background-color: rgb(246, 235, 235);
+        background-color: rgb(194, 199, 203);
+      }
+
+      .parent {
+        padding: 50px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .detail {
+        width: 400px;
+        height: 350px;
+        background-color: rgb(230, 227, 227);
+        border-style: outset;
         display: flex;
         flex-direction: column;
       }
 
-      .div__image {
-        flex: 1;
-        background-image: url(./image/wallpapersden.com_artistic-landscape-view_1920x1080.jpg);
-        background-size: 100%;
+      .detail__top {
+        flex: 0.5;
+        border-bottom: 1px solid rgb(143, 143, 143);
       }
 
-      
+      .text_detail__top {
+        margin-top: 35px;
+        text-align: center;
+        font-size: 20px;
+        font-family: "Lucida Sans";
+        color: rgb(114, 113, 113);
+      }
 
-      .followers {
-        height: 60px;
-        background-color: white;
-        border: 1px solid rgb(207, 201, 201);
+      .number_detail__top {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 70px;
+        font-family: monospace;
+        color: rgb(46 133 176);
+      }
+
+      .detail__bottom {
+        flex: 0.5;
         display: flex;
         align-items: center;
+        justify-content: center;
       }
 
-      .followers__content {
-        color: rgb(207, 201, 201);
-        margin-left: 50px;
+      .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+      }
+
+      .graph {
+        width: 30px;
+        height: 80px;
+        border: 1px solid rgb(143, 143, 143);
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* .graph_empty {
+        flex: 0.6;
+      } */
+
+      .color_red {
+        background-color: red;
+      }
+
+      .color_green {
+        background-color: green;
+      }
+
+      .color_yellow {
+        background-color: yellow;
+      }
+
+      .color_aqua {
+        background-color: aqua;
+      }
+
+      .color_brown {
+        background-color: brown;
+      }
+
+      .fl_10 {
+        flex: 0.1;
+      }
+
+      .fl_20 {
+        flex: 0.2;
+      }
+
+      .fl_30 {
+        flex: 0.3;
+      }
+
+      .fl_40 {
+        flex: 0.4;
+      }
+
+      .fl_50 {
+        flex: 0.5;
+      }
+
+      .fl_60 {
+        flex: 0.6;
+      }
+
+      .fl_70 {
+        flex: 0.7;
+      }
+
+      .fl_80 {
+        flex: 0.8;
+      }
+
+      .fl_90 {
+        flex: 0.9;
+      }
+
+      .fl_1 {
+        flex: 1;
+      }
+
+      /* .graph_mon {
+        flex: 0.4;
+        background-color: red;
+      } */
+
+      .date {
+        margin-top: 15px;
+        font-size: 20px;
+        font-family: "Lucida Sans";
+        color: rgb(143, 143, 143);
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="div__image"></div>
-      <div class="followers">
-        <div class="followers__content">FOLLOWERS</div>
+      <div class="parent">
+        <div class="detail">
+          <div class="detail__top">
+            <div class="text_detail__top">TODAY'S VISITORS</div>
+            <div class="number_detail__top">24.599</div>
+          </div>
+          <div class="detail__bottom">
+            <div class="col">
+              <div class="graph">
+                <div class="fl_60"></div>
+                <div class="fl_40 color_red"></div>
+              </div>
+              <div class="date">
+                <div>MON</div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="graph">
+                <div class="fl_70"></div>
+                <div class="fl_30 color_green"></div>
+              </div>
+              <div class="date">
+                <div>TUE</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="graph">
+                <div class="fl_30"></div>
+                <div class="fl_70 color_yellow"></div>
+              </div>
+              <div class="date">
+                <div>WED</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="graph">
+                <div class="fl_20"></div>
+                <div class="fl_80 color_aqua"></div>
+              </div>
+              <div class="date">
+                <div>THU</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="graph">
+                <div class="fl_30"></div>
+                <div class="fl_70 color_brown"></div>
+              </div>
+              <div class="date">
+                <div>FRI</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

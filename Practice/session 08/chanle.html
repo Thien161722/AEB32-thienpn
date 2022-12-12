@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Click the button to demonstrate the prompt box.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        let num = prompt('Please enter your nuner');
+        let x = num & 2
+        if (x != 0 ) {
+            console.log(num + ' là số lẻ');
+          document.getElementById('demo').innerHTML = num + ' là số lẻ';
+        }else{
+            console.log(num + ' là số chẵn');
+            document.getElementById('demo').innerHTML = num + ' là số chẵn';
+        }
+      }
+    </script>
+  </body>
+</html>
