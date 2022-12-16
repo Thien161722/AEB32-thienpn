@@ -17,3 +17,5 @@ ss06
 - sau thuộc tính có dấu ? sẽ check null dc (vd: user?.name)
 - let arr = [1,2,3,4] khi đó typeof của arr là Array<number>
 - Sự khác nhau giữa let age = 19 và age = 19
+
+ss09
