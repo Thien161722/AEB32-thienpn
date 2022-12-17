@@ -9,6 +9,8 @@ function createTGV() {
 }
 // createTGV();
 
+
+
 // ve tam giac deu
 // h =5             star, space -> h & index
 //    *             index = 1, * = 1 : 2 * index -1 , space = 4 : h-index
@@ -28,6 +30,8 @@ function createTGC() {
   }
 }
 // createTGC();
+
+
 
 // phan tich bai1
 // n = 5
@@ -54,6 +58,8 @@ function bai1() {
   }
 }
 // bai1();
+
+
 
 // phan tich bai2
 // ma tran A co co: m = 3; n = 2; so nguyen k
@@ -90,6 +96,8 @@ function bai2() {
   console.log(count);
 }
 // bai2();
+
+
 
 // phan tich bai3
 // day so co N = 5 so nguyen duong
@@ -136,6 +144,8 @@ function bai3() {
 }
 // bai3();
 
+
+
 // phan tich bai 4
 // nhap so truong hop t , nhap t so nguyen duong
 // t = 2; a = 150; b = 2400;
@@ -162,10 +172,64 @@ function bai4() {
     }
     A.push(value);
   }
+  // console.log(A);
   for (let j = 0; j < A.length; j++) {
     console.log(A[j]);
   }
 }
+
 // bai4();
 
+
+
 // phan tich bai 5
+// lam tuong tu bai 3, trong truong hop A[i] === A[index], se so sanh B[i] va B[index]
+// n = 3
+// m = 1 -> vi tuong do can manh hon 2 vi tuong khac (count = 2) -> count = n - m
+// m = 2 -> vi tuong do can manh hon 1 vi tuong khac (count = 1) -> count = n - m
+// m = 3 -> vi tuong do can manh hon 0 vi tuong khac (count = 0) -> count = n - m
+function bai5() {
+  let inputRequire = prompt("nhap so vi tuong va thu hang vi tuong can tim:");
+  let arrRequire = inputRequire.split(" ");
+  console.log(arrRequire);
+  let n = parseInt(arrRequire[0]);
+  let m = parseInt(arrRequire[1]);
+  let A = [];
+  for (let i = 0; i < n; i++) {
+    let inputParameterOfEveryIterm = prompt(
+      "nhap 2 thong so cho moi vi tuong thu " + (i + 1) + ":"
+    );
+    let arrParameterOfEveryIterm = inputParameterOfEveryIterm.split(" ");
+    // let parameterOfPhysics = parseInt(arrParameterOfEveryIterm[0]);
+    A.push(arrParameterOfEveryIterm);
+  }
+  console.log(A);
+
+  for (let index = 0; index < A.length; index++) {
+    let count = 0;
+    let countSame = 0;
+    for (let j = 0; j < A.length; j++) {
+      if (parseInt(A[index][0]) === parseInt(A[j][0])) {
+        if (parseInt(A[index][1]) > parseInt(A[j][1])) {
+          count++;
+        } else if (parseInt(A[index][1]) === parseInt(A[j][1])) {
+          countSame++;
+        }
+      } else if (parseInt(A[index][0]) > parseInt(A[j][0])) {
+        count++;
+      }
+    }
+    if (countSame > 1){
+      n = n - countSame + 1;
+    }
+    if (m > n) {
+      console.log("Khong co vi tuong manh thu" + m);
+      break;
+    } else {
+      if (count === n - m) {
+        console.log(A[index]);
+      }
+    }
+  }
+}
+// bai5();
