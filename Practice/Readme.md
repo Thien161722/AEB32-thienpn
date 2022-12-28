@@ -18,4 +18,5 @@ ss06
 - let arr = [1,2,3,4] khi đó typeof của arr là Array<number>
 - Sự khác nhau giữa let age = 19 và age = 19
 
-ss09
+ss13
+- khi lamf việc với img, table thì nên dùng thêm một div bọc ngoài để css ko bị phá layout

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lí dự án</title>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/listProject.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header class="nav d__flex">
+      <div class="logo"></div>
+      <div class="parent__namecompany">
+        <h1 class="namecompany">Công ty TNHH MTV Dịch vụ Bảo trì Công nghiệp</h1>
+        <p class="contact">Địa chỉ: 75 Yên Bái, Hải Châu, Tp. Đà nẵng</p>
+        <p class="contact">Số điện thoại: 0236 888 888</p>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__item__link" href="./home.html">HOME</a>
+        </li>
+        <li class="nav__item active">
+          <a class="nav__item__link" href="./listProject.html">WORK</a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="container__content">
+      <button class="add__project__button" onclick="gotoForm()">Thêm dự án +</button>
+      <div>
+        <table class="table table-primary table-hover">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">STT</th>
+              <th scope="col" class="text-center">Mã dự án</th>
+              <th scope="col">Tên khách hàng</th>
+              <th scope="col">Tên dự án</th>
+              <th scope="col">Người chịu trách nhiệm</th>
+              <th scope="col" class="text-center">Tiến độ</th>
+              <th scope="col">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody class="table-secondary" id="tbody__project">
+        
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-5.2.3-dist/umd/popper.min.js"></script>
+    <script src="./js/listProject.js"></script>
+  </body>
+</html>

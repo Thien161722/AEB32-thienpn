@@ -4,6 +4,10 @@
   let id = urlDetail.get("id");
   console.log(id);
 
+//   window.onload = function () {
+//     let id = getIdUrl();
+//     getUser(id);
+//   };
 
 // function getIdUrl() {
 //   let url = new URL(window.location.href);

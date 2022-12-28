@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.parent {
+    border: 1px solid rgb(48, 44, 44);
+    padding: 10px;
+    width: 480px;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .left__column {
+    flex: 0.5;
+    display: flex;
+  }
+
+  .img__product {
+    margin: auto;
+    display: flex;
+  }
+
+  .spec__img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+ 
+
+  .right__column {
+    flex: 0.5;
+    display: flex;
+  }
+
+  .detail {
+   margin: auto;
+  }

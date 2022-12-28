@@ -15,7 +15,7 @@
     <header class="bg-ccc p-3">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <!-- <a class="navbar-brand" href="#">Navbar</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -26,7 +26,7 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -47,39 +47,30 @@
     </header>
 
     <div class="row pt-3">
-      <div class="col-12 col-sm-3 col__content">
+      <div class="col-12 col-sm-3">
         <p class="border-bottom p-3">The Drive</p>
         <p class="border-bottom p-3">The Walk</p>
         <p class="border-bottom p-3">The Return</p>
         <p class="border-bottom p-3">The End</p>
       </div>
-      <div class="col-12 col-sm col__content">
+      <div class="col-12 col-sm">
         <form onsubmit="return false">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text">
+            <label for="inputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="inputName" />
+            <!-- <div id="emailHelp" class="form-text">
               We'll never share your email with anyone else.
-            </div>
+            </div> -->
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Password</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" />
           </div>
-          <div class="mb-3 form-check">
+          <div class="mb-3">
+            <label for="inputAvatar" class="form-label">Avatar</label>
+            <input type="text" class="form-control" id="inputAvatar" />
+          </div>
+          <!-- <div class="mb-3 form-check">
             <input
               type="checkbox"
               class="form-check-input"
@@ -88,11 +79,17 @@
             <label class="form-check-label" for="exampleCheck1"
               >Check me out</label
             >
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          </div> -->
+          <button
+            type="submit"
+            class="btn btn-primary"
+            onclick="handleSubmit()"
+          >
+            Submit
+          </button>
         </form>
       </div>
-      <div class="col-12 col-sm-3 col__content bg-info col__content__height">
+      <div class="col-12 col-sm-3 bg-info col__content__height">
         <div class="p-3">
           <h2>What?</h2>
           <p>The Pulpit Rock is a part of mountain that looks like a pulpit.</p>
@@ -108,7 +105,7 @@
       </div>
     </div>
 
-    <footer class="bg-ccc text-center">
+    <footer class="bg-ccc text-center mt-2">
       This web page is a part of a demonstration of fluid web design made by
       www.w3schools.com. Resize the browser window to see the content response
       to the resizing.
@@ -117,5 +114,6 @@
     <script src="./bootstrap-5.2.3-dist/umd/popper.min.js"></script>
 
     <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>

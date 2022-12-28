@@ -1,0 +1,56 @@
+.nav {
+  background-color: rgb(242, 235, 235);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px !important;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/abc-network-logo-2D91141745-seeklogo.com.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav__item {
+  float: left;
+  /* padding: 30px 16px; */
+}
+
+.nav__item .nav__item__link {
+  display: block;
+  color: rgb(98, 96, 96);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 30px 16px;
+}
+
+
+
+.nav__item:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: white;
+}
+
+.namecompany {
+  color: blue;
+  margin: 0;
+}
+
+.contact {
+  text-align: center;
+  margin: 0;
+}
