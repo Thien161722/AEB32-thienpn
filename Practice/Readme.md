@@ -20,3 +20,7 @@ ss06
 
 ss13
 - khi lamf việc với img, table thì nên dùng thêm một div bọc ngoài để css ko bị phá layout
+
+notes:
+-regex number : /\d+/
+-regex text : /[a-z]+/i

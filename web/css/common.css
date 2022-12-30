@@ -5,6 +5,7 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* css flexbox */
 .d__flex {
     display: flex;
 }
@@ -28,7 +29,9 @@ html, body {
 .margin--auto {
     margin: auto;
 }
+/*  */
 
+/* css % of column */
 .width__column__5 {
     width: 5%;
 }
@@ -48,7 +51,18 @@ html, body {
     width: 20%;
 }
 
+/* .width__column__2 {
+    width: 22.5%;
+} */
+
 .text__center {
     text-align: center;
 }
 
+.text__left {
+    text-align: start;
+}
+
+.cusor__modifle {
+    cursor: pointer;
+}

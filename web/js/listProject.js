@@ -8,20 +8,38 @@ function _renderProject(project) {
     countRow++;
     resRow += formatRowProject(project[index], countRow);
   }
+  // function formatRowProject__old(project, countRow) {
+  //   return `<tr>
+  //   <td class="text-center">${countRow}</td>
+  //   <td class="text-center">${project.id}</td>
+  //   <td>${project.customer}</td>
+  //   <td>${project.nameproject}</td>
+  //   <td>${project.name}</td>
+  //   <td class="text-center">${project.progress}%</td>
+  //   <td>
+  //     <button type="button" class="btn btn-info" onclick='goToDetail(${project.id})'>Chi tiết</button>
+  //     <button type="button" class="btn btn-success" onclick='goToUpdate(${project.id})'>Cập nhật</button>
+  //     <button type="button" class="btn btn-danger" onclick='projectDelete(${project.id})'>Xoá</button>
+  //   </td>
+  // </tr>`;
+  // }
+
   function formatRowProject(project, countRow) {
-    return `<tr>
-    <td class="text-center">${countRow}</td>
-    <td class="text-center">${project.id}</td>
-    <td>${project.customer}</td>
-    <td>${project.nameproject}</td>
-    <td>${project.name}</td>
-    <td class="text-center">${project.progress}%</td>
-    <td>
-      <button type="button" class="btn btn-info" onclick='goToDetail(${project.id})'>Chi tiết</button>
-      <button type="button" class="btn btn-success" onclick='goToUpdate(${project.id})'>Cập nhật</button>
-      <button type="button" class="btn btn-danger" onclick='projectDelete(${project.id})'>Xoá</button>
-    </td>
-  </tr>`;
+    return `
+    <tr>
+      <td class="text__center">${countRow}</td>
+      <td class="text__center">${project.id}</td>
+      <td>${project.customer}</td>
+      <td>${project.nameproject}</td>
+      <td>${project.name}</td>
+      <td class="text__center">${project.progress}%</td>
+      <td class="text__center">
+        <button type="button" class="cusor__modifle" onclick='goToDetail(${project.id})'>Chi tiết</button>
+        <button type="button" class="cusor__modifle" onclick='goToUpdate(${project.id})'>Cập nhật</button>
+        <button type="button" class="cusor__modifle" onclick='projectDelete(${project.id})'>Xoá</button>
+      </td>
+    </tr>
+    `;
   }
   elmBodyTable.innerHTML = resRow;
 }

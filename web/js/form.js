@@ -2,6 +2,7 @@ const urlProject = "https://63a06bea24d74f9fe837c531.mockapi.io/projects";
 let url = new URLSearchParams(window.location.search);
 let id = url.get("id");
 
+
 if (id) {
   getProject();
 }
@@ -84,6 +85,9 @@ function returnListProject() {
   window.location.href = `./listProject.html`;
 }
 
-// function handleChange(elm) {
-//   elm.value = elm.value.replace()
-// }
+function handleModifleInputProgress() {
+  let elmInputProgress = document.getElementById("inputProgress");
+  elmInputProgress.value = elmInputProgress.value.replace(/[a-z]+/i, "");
+  // console.log(elmInputProgress.value);
+  // console.log(elm);
+}
