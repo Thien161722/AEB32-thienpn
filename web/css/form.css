@@ -1,5 +1,13 @@
+.container__body {
+  height: 100vh;
+  background-color: rgb(209, 206, 206);
+  padding: 30px 70px;
+  margin: 0 100px;
+}
+
 .container__form {
-  margin: 30px auto;
+  /* margin: 30px auto; */
+  margin: auto;
   padding: 20px;
   max-width: 700px;
   height: 200px;

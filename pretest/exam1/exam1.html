@@ -28,9 +28,118 @@
     </div>
     <script src="./exam1.js"></script>
     <!-- <script>
-      const str = "23478abcjsd";
-      const newStr = str.replace(/[a-z]+/i, "");
-      console.log(newStr);
+      const url = "https://63a06bea24d74f9fe837c531.mockapi.io/products";
+      let data = [
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+        {
+          image: "./img/download.jpg",
+          detailproduct: 'Clothes',
+          typeofproduct: 'accessories',
+          bag: 'lacoste',
+          age: 'kid',
+          sex: 'men',
+        },
+
+      ];
+
+      data.forEach(element => {
+        postProducts(element)
+      });
+
+      function postProducts(product) {
+        fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(product),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            //   console.log(data);
+            alert("Thêm product thành công!");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
     </script> -->
   </body>
 </html>

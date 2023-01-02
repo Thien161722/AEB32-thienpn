@@ -28,27 +28,35 @@
       </ul>
     </header>
 
-    <div class="container__form">
-      <form onsubmit="return false">
-        <div class="form__row">
-          <label for="inputCustomer" class="form__label">Tên Khách hàng</label>
-          <input type="text" class="form__input" id="inputCustomer">
-        </div>
-        <div class="form__row">
-          <label for="inputProject" class="form__label">Tên Dự án</label>
-          <input type="text" class="form__input" id="inputProject">
-        </div>
-        <div class="form__row">
-          <label for="inputName" class="form__label">Người chịu trách nhiệm</label>
-          <input type="text" class="form__input" id="inputName">
-        </div>
-        <div class="form__row">
-          <label for="inputProgress" class="form__label">Tiến độ</label>
-          <input type="text" class="form__input" id="inputProgress" onchange="handleModifleInputProgress()">
-        </div>
-        <button type="submit" class="form__btn" onclick="handleSubmit()">Submit</button>
-      </form>
+
+    <div class="container__body">
+      <div class="container__form">
+        <form onsubmit="return false">
+          <div class="form__row">
+            <label for="inputCustomer" class="form__label">Tên Khách hàng</label>
+            <input type="text" class="form__input" id="inputCustomer">
+          </div>
+          <div class="form__row">
+            <label for="inputProject" class="form__label">Tên Dự án</label>
+            <input type="text" class="form__input" id="inputProject">
+          </div>
+          <div class="form__row">
+            <label for="inputName" class="form__label">Người chịu trách nhiệm</label>
+            <input type="text" class="form__input" id="inputName">
+          </div>
+          <div class="form__row">
+            <label for="inputProgress" class="form__label">Tiến độ</label>
+            <input type="text" class="form__input" id="inputProgress" onchange="handleModifleInputProgress()">
+          </div>
+          <button type="submit" class="form__btn" onclick="handleSubmit()">Submit</button>
+        </form>
+      </div>
     </div>
+    
+
+    <footer class="d__flex">
+      <p class="text__center margin--auto">@ 2022 Copyright <strong>ABC.com</strong></p>
+    </footer>
     <!-- <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap-5.2.3-dist/umd/popper.min.js"></script> -->
     <script src="./js/form.js"></script>

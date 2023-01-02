@@ -59,6 +59,7 @@ function postProject(project) {
     .then((data) => {
       //   console.log(data);
       returnListProject();
+      alert('Thêm dự án thành công!');
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -75,6 +76,7 @@ function updateProject(project) {
     .then((data) => {
       //   console.log(data);
       returnListProject();
+      alert('Cập nhật thông tin dự án thành công!');
     })
     .catch((error) => {
       console.error("Error:", error);

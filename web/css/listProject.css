@@ -1,14 +1,13 @@
 .container__content {
   margin: 0 100px;
   height: 700px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(209, 206, 206);
 }
 
 
 
 .add__project__button {
-  margin: 10px 0;
-  /* float: right; */
+  margin: 10px 10px;
   background-color:  rgb(12, 70, 230);
   color: rgb(255, 255, 255);
   padding: 10px 16px;
@@ -36,12 +35,16 @@ thead tr th {
   color: white;
 }
 
-tbody tr:nth-child(even) {
-  background-color: rgb(232, 230, 230);
+/* tbody tr:nth-child(even) {
+  background-color: rgb(206, 224, 241);
 }
 
 tbody tr:nth-child(odd) {
-  background-color: rgb(232, 230, 230, 0.5);
+  background-color:rgb(103, 121, 137);
+} */
+
+tbody tr {
+  background-color: rgb(149, 195, 236);
 }
 
 tbody tr td {

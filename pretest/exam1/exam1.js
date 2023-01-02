@@ -47,3 +47,9 @@ function getProductsId() {
 }
 
 getProductsId();
+
+// function dumData() {
+//   let product = {
+//     image: "./img/download.jpg"
+//   }
+// }
